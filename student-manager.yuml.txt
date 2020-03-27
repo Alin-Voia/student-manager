@@ -1,0 +1,8 @@
+[Student]-(View Uni Details),[Student]-(Grades),
+(View Uni Details)>(Login),(Grades)>(Login),(Login)>(Error),(Error)-(note:After 5 Attempts the student can try to login again after 24 hours),(Error)>(Login)
+[Teacher]-(listStudents),[Teacher]-(addStudents),[Teacher]-(addGrades)
+(listStudents)>(Login),(addStudents)>(Login),(addGrades)>(Login)
+[Admin]-(createAccount)
+[Admin]-(link subject to Teacher)
+(link subject to Teacher)>(addStudents)
+(createAccount)<(Allready exist)
